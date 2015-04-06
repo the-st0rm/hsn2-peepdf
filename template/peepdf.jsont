@@ -1,0 +1,57 @@
+{
+  "type":"analysis",
+  "job":<<@|hsn-job-id>>,
+  "service":"peepdf",
+  "node":<<@|hsn-node-ref>>,
+  "details":
+  {
+    "structure":"list",
+    "name":"Analysis details",
+    "value":
+    [
+      {
+        "structure":"boolean",
+        "name":"PeePDF Executed Successfully",
+        "value":<<peepdf_executed_successfully>>
+      },
+      {
+        "structure":"integer",
+        "name":"Processing started",
+        "value":<<peepdf_time_start>>
+      },
+      {
+        "structure":"integer",
+        "name":"Processing finished",
+        "value":<<peepdf_time_stop>>
+      },
+
+      {
+        "structure":"text",
+        "name":"file SHA1",
+        "value":<<file_SHA1>>
+      },
+      {
+        "structure":"text",
+        "name":"peepdf_suspicious_content",
+        "value":<<peepdf_suspicious_content>>
+      },
+      {
+        "structure":"text",
+        "name":"peepdf_metadata",
+        "value":<<peepdf_metadata>>
+      },
+      {
+        "structure":"text",
+        "name":"peepdf_javascript",
+        "value":<<peepdf_javascript>>
+      },
+
+      {
+        "structure":"integer",
+        "name":"peepdf_numStreams",
+        "value":<<peepdf_numStreams>>
+      }
+    ]
+      
+  }
+}
